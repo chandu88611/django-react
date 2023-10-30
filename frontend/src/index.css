@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collapse {
+    display: none;
+ }
+ 
+ /* When hovering over the parent menu item, display the collapsed menu */
+ .nav-item:hover .collapse {
+    display: block;
+ }
+
+ .auth-one-bg {
+   background-image: url(https://www.telecominc.com/wp-content/uploads/bg-qualification.jpg);
+   background-position: center;
+   background-size: cover;
+   }
+   .auth-one-bg .bg-overlay {
+   background: -webkit-gradient(linear,left top,right top,from(#9E9E9E),to(#000));
+   background: linear-gradient(to right,#9E9E9E,#000);
+   opacity: .8;
+   }
+   .fadeInDown {
+   animation-name: fadeInDown;
+   animation-duration: 1.5s;
+   animation-fill-mode: both;
+   }
+   @keyframes fadeInDown {
+   0% {
+   opacity: 0;
+   transform: translate3d(0, -100%, 0);
+   }
+   50%{
+   opacity: .5;
+   transform: translate3d(0, 20%, 0);
+   }
+   100% {
+   opacity: 1;
+   transform: none;
+   }
+   }
+   /* Fade-in Animation */
+   @keyframes fadeIn {
+   from {
+   opacity:0;
+   }
+   to {
+   opacity:1;
+   }
+   }
+   .fadeIn {
+   opacity:0;
+   animation: fadeIn ease-in 1s;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+   }
+   .fadeIn.first {
+   animation-delay: 0.4s;
+   }
+   .fadeIn.second {
+   animation-delay: 0.6s;
+   }
+   .fadeIn.third {
+   animation-delay: 0.8s;
+   }
+   .fadeIn.fourth {
+   animation-delay: 1s;
+   }
+   /* Fade-in Animation */
+   .auth-page-wrapper .auth-page-content{
+   position: inherit;
+   }
+   .auth-one-bg-position{
+   height: 500px;
+   z-index: 0;
+   }
+
+   .auth-one-bg {
+      background-image: url(https://www.telecominc.com/wp-content/uploads/bg-qualification.jpg);
+      background-position: center;
+      background-size: cover;
+      }
+      .auth-one-bg .bg-overlay {
+      background: -webkit-gradient(linear,left top,right top,from(#9E9E9E),to(#000));
+      background: linear-gradient(to right,#9E9E9E,#000);
+      opacity: .8;
+      }
+      .fadeInDown {
+      animation-name: fadeInDown;
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+      }
+      @keyframes fadeInDown {
+      0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+      }
+      50%{
+      opacity: .5;
+      transform: translate3d(0, 20%, 0);
+      }
+      100% {
+      opacity: 1;
+      transform: none;
+      }
+      }
+      /* Fade-in Animation */
+      @keyframes fadeIn {
+      from {
+      opacity:0;
+      }
+      to {
+      opacity:1;
+      }
+      }
+      .fadeIn {
+      opacity:0;
+      animation: fadeIn ease-in 1s;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      }
+      .fadeIn.first {
+      animation-delay: 0.4s;
+      }
+      .fadeIn.second {
+      animation-delay: 0.6s;
+      }
+      .fadeIn.third {
+      animation-delay: 0.8s;
+      }
+      .fadeIn.fourth {
+      animation-delay: 1s;
+      }
+      /* Fade-in Animation */
+      .auth-page-wrapper .auth-page-content{
+      position: inherit;
+      }
+      .auth-one-bg-position{
+      height: 500px;
+      z-index: 0;
+      }
+      .otp-field {
+      flex-direction: row;
+      column-gap: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .otp-field input {
+      height: 45px;
+      width: 42px;
+      border-radius: 6px;
+      outline: none;
+      font-size: 1.125rem;
+      text-align: center;
+      border: 1px solid #ddd;
+      }
+      .otp-field input:focus {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+      }
+      .otp-field input::-webkit-inner-spin-button,
+      .otp-field input::-webkit-outer-spin-button {
+      display: none;
+      }
+      /* Works for Firefox */
+      .otp-field input[type="number"] {
+      -moz-appearance: textfield;
+      }
+      .resend {
+      font-size: 12px;
+      }
+
+      .loader {
+         width: 48px;
+         height: 48px;
+         z-index: 200;
+         border-radius: 50%;
+         display: inline-block;
+         border: 3px solid;
+         border-color: #FFF #FFF transparent;
+         box-sizing: border-box;
+         animation: rotation 1s linear infinite;
+       }
+       .loader::after {
+         content: '';  
+         box-sizing: border-box;
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+         border: 3px solid;
+         border-color: transparent #FF3D00 #FF3D00;
+         width: 24px;
+         height: 24px;
+         border-radius: 50%;
+         animation: rotationBack 0.5s linear infinite;
+         transform-origin: center center;
+       }
+       
+       @keyframes rotation {
+         0% {
+           transform: rotate(0deg);
+         }
+         100% {
+           transform: rotate(360deg);
+         }
+       } 
+           
+       @keyframes rotationBack {
+         0% {
+           transform: rotate(0deg);
+         }
+         100% {
+           transform: rotate(-360deg);
+         }
+       }
+           
